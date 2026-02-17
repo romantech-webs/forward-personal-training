@@ -1,307 +1,351 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Forward Personal Training & Health Solutions",
+  logo: "/images/logo.png",
+  tagline: "Fisioterapia y entrenamiento personalizado en Las Palmas",
+  description: "Forward Personal Training & Health Solutions es tu centro de fisioterapia y entrenamiento en Las Palmas, Álava. Combinamos fisioterapia profesional con entrenamiento enfocado en movilidad y recuperación. Con valoración de 4.8 estrellas en Google, ofrecemos seguimiento personalizado para que consigas tus objetivos de salud y bienestar. No solo tratamos, te acompañamos en todo el proceso.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#796758",
+    secondary: "#241f1a",
+    accent: "#dbd8c8",
+    neutral: "#f4f3f2"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "646 85 68 19",
+  whatsapp: "+34646856819",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Av. Alcalde José Ramirez Bethencourt, 22, 35004 Las Palmas de Gran Canaria, Las Palmas, España",
+    city: "Las Palmas",
+    province: "Álava",
+    postalCode: "35004",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=14916709798569049529&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Forward%20Personal%20Training%20%26%20Health%20Solutions%20%4028.1195%2C-15.4223&z=16&output=embed",
+  coordinates: {
+    lat: 28.1195,
+    lng: -15.4223
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - viernes",
+      hours: "7:00–21:30"
+    },
+    {
+      days: "sábado",
+      hours: "9:00–14:00"
+    },
+    {
+      days: "domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 4.8,
+    count: 19,
+    url: "https://maps.google.com/?cid=14916709798569049529&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Felix Perez",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "No es sólo una sala para entrenar, se enfocan en la movilidad y recuperación,además de la parte más importante,que hacemos cuando no estamos allí... seguimiento para que consigamos nuestros objetivos",
+        date: "Hace 3 años"
       },
       {
-        author: "Javier Padilla",
+        author: "DOLORES DE BETHENCOURT",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Estoy encantada !!! Quién me lo iba a decir. Me encuentro mucho mejor desde que me entreno en Forward",
+        date: "Hace 4 años"
       },
       {
-        author: "Melanie Ponce",
+        author: "Aristides Curbelo Hernandez",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
-      },
-      {
-        author: "María Teresa Salguero",
-        rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
-      },
-    ],
+        text: "Solo puedo hablar del area de Fisioterapia, donde tienen a una gran profesional.",
+        date: "Hace 6 años"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "fisioterapia-manual",
+      name: "Fisioterapia Profesional",
+      description: "Contamos con una gran profesional en fisioterapia que aplica técnicas manuales especializadas para tratar lesiones y dolores. Evaluamos tu estado físico de forma integral para diseñar el tratamiento más adecuado. Nuestro enfoque personalizado garantiza resultados efectivos y duraderos.",
+      benefits: [
+        "Alivio efectivo del dolor muscular y articular",
+        "Tratamiento personalizado según tu lesión",
+        "Recuperación más rápida y segura"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "entrenamiento-personalizado",
+      name: "Entrenamiento Personalizado",
+      description: "No es solo una sala para entrenar. Diseñamos programas de entrenamiento enfocados en movilidad, recuperación y consecución de objetivos. Cada sesión está adaptada a tus necesidades específicas con seguimiento continuo de tu evolución.",
+      benefits: [
+        "Programas adaptados a tu nivel y objetivos",
+        "Mejora de movilidad y funcionalidad",
+        "Seguimiento para resultados reales"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "movilidad-recuperacion",
+      name: "Movilidad y Recuperación",
+      description: "Nos especializamos en mejorar tu movilidad y acelerar tu recuperación mediante técnicas específicas. Trabajamos la flexibilidad, el rango articular y la funcionalidad para que te sientas mejor en tu día a día. Ideal para personas con limitaciones de movimiento o dolor crónico.",
+      benefits: [
+        "Mayor amplitud de movimiento",
+        "Reducción de rigidez y tensión",
+        "Prevención de futuras lesiones"
+      ],
+      icon: "Activity"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "fisioterapia-deportiva",
+      name: "Fisioterapia Deportiva",
+      description: "Tratamiento especializado para deportistas y personas activas que buscan recuperarse de lesiones o mejorar su rendimiento. Aplicamos técnicas avanzadas de recuperación deportiva combinadas con entrenamiento funcional. Te ayudamos a volver a tu actividad de forma segura.",
+      benefits: [
+        "Recuperación óptima de lesiones deportivas",
+        "Prevención de recaídas",
+        "Mejora del rendimiento físico"
+      ],
+      icon: "Target"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "rehabilitacion-funcional",
+      name: "Rehabilitación Funcional",
+      description: "Programas de rehabilitación que combinan fisioterapia y ejercicio terapéutico para recuperar tu funcionalidad completa. Trabajamos tanto en consulta como con pautas para casa, porque lo más importante es lo que haces cuando no estás aquí. Seguimiento constante hasta alcanzar tus metas.",
+      benefits: [
+        "Recuperación integral y funcional",
+        "Pautas para continuar en casa",
+        "Objetivos claros y medibles"
+      ],
+      icon: "Heart"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "tratamiento-dolor-cronico",
+      name: "Tratamiento del Dolor Crónico",
+      description: "Abordaje especializado para personas que sufren dolor persistente. Identificamos las causas del dolor y aplicamos técnicas combinadas de fisioterapia y ejercicio terapéutico. Muchos de nuestros pacientes se encuentran mucho mejor desde que entrenan con nosotros.",
+      benefits: [
+        "Reducción significativa del dolor",
+        "Mejora de la calidad de vida",
+        "Estrategias para gestionar el dolor"
+      ],
+      icon: "Zap"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "valoracion-personalizada",
+      name: "Valoración Personalizada",
+      description: "Realizamos una evaluación completa de tu estado físico, historial de lesiones y objetivos personales. Esta valoración inicial nos permite diseñar un plan de tratamiento y entrenamiento específico para ti. Es el primer paso fundamental para tu recuperación.",
+      benefits: [
+        "Diagnóstico preciso de tu situación",
+        "Plan personalizado desde el inicio",
+        "Objetivos realistas y alcanzables"
+      ],
+      icon: "Activity"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "seguimiento-continuo",
+      name: "Seguimiento Continuo",
+      description: "Lo que nos diferencia es nuestro compromiso con tu progreso. Realizamos seguimiento constante de tu evolución, ajustando el tratamiento y entrenamiento según tus avances. Te acompañamos hasta que consigas tus objetivos de salud y bienestar.",
+      benefits: [
+        "Ajustes según tu evolución",
+        "Motivación y apoyo constante",
+        "Resultados sostenibles a largo plazo"
+      ],
+      icon: "Target"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con Nosotros",
+      description: "Llámanos al 646 85 68 19 o escríbenos por WhatsApp para solicitar tu cita de valoración inicial. Te atenderemos personalmente y resolveremos todas tus dudas sobre nuestros servicios."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración Integral",
+      description: "Realizamos una evaluación completa de tu estado físico, historial de lesiones y objetivos personales. Diseñamos un plan personalizado que combina fisioterapia y entrenamiento según tus necesidades específicas."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento y Entrenamiento",
+      description: "Comenzamos con tu programa personalizado enfocado en movilidad, recuperación y consecución de objetivos. Aplicamos las técnicas de fisioterapia más adecuadas y te guiamos en cada sesión de entrenamiento con seguimiento continuo."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y Resultados",
+      description: "Te acompañamos con seguimiento constante, ajustando el plan según tu evolución. Te damos pautas para aplicar cuando no estás aquí, porque lo más importante es tu progreso continuo hasta alcanzar tus objetivos de salud."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración de 4.8 Estrellas en Google",
+      description: "Con 19 reseñas verificadas, nuestros pacientes destacan la profesionalidad de nuestro equipo, el enfoque personalizado en movilidad y recuperación, y los resultados reales que obtienen. Su confianza es nuestra mejor carta de presentación.",
+      icon: "Heart"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Enfoque Integral y Personalizado",
+      description: "No somos solo una sala de entrenamiento. Combinamos fisioterapia profesional con entrenamiento enfocado en movilidad y recuperación, diseñando planes completamente personalizados según tus objetivos y necesidades específicas.",
+      icon: "Target"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Seguimiento Continuo de tu Progreso",
+      description: "Lo que hacemos cuando no estás aquí es lo más importante. Por eso ofrecemos seguimiento constante, pautas para casa y ajustes según tu evolución. Te acompañamos en cada paso hasta que consigas tus objetivos de salud y bienestar.",
+      icon: "Activity"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Equipo de Fisioterapia Profesional",
+      description: "Contamos con una gran profesional en el área de fisioterapia, reconocida por nuestros pacientes por su experiencia y trato personalizado. Nuestro equipo se compromete con tu recuperación y mejora continua.",
+      icon: "Hand"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Equipo de Forward Personal Training & Health Solutions",
+      role: "Fisioterapeutas Colegiados",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Forward Personal Training & Health Solutions nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 7"
+    },
+    {
+      src: "/images/gallery/8.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 8"
+    },
+    {
+      src: "/images/gallery/9.webp",
+      alt: "Forward Personal Training & Health Solutions - Imagen 9"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué diferencia a Forward Personal Training & Health Solutions de otros centros?",
+      answer: "En Forward combinamos fisioterapia profesional con entrenamiento personalizado enfocado en movilidad y recuperación. No somos solo una sala de entrenamiento: ofrecemos seguimiento continuo para que consigas tus objetivos tanto dentro como fuera de nuestras instalaciones. Con una valoración de 4.8 estrellas en Google, nuestros pacientes destacan la atención personalizada y los resultados reales que obtienen."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Ofrecen servicios de fisioterapia y entrenamiento por separado?",
+      answer: "Sí, puedes venir únicamente para tratamiento de fisioterapia o solo para entrenamiento personalizado. Sin embargo, muchos de nuestros pacientes se benefician del enfoque integral que combina ambos servicios, ya que la recuperación es más efectiva cuando se trabaja tanto el tratamiento como el movimiento funcional. En la valoración inicial determinaremos qué necesitas."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Cómo puedo solicitar una cita en Forward?",
+      answer: "Puedes contactarnos llamando al 646 85 68 19 o escribirnos por WhatsApp al mismo número. Estamos ubicados en Las Palmas, Álava. Te atenderemos personalmente para agendar tu cita de valoración inicial en el horario que mejor te convenga."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué incluye la primera sesión de valoración?",
+      answer: "En la valoración inicial realizamos una evaluación completa de tu estado físico, historial de lesiones, movilidad y objetivos personales. A partir de esta información, diseñamos un plan personalizado que puede incluir fisioterapia, entrenamiento o ambos servicios. También te explicamos qué esperar del tratamiento y resolvemos todas tus dudas."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Realizan seguimiento fuera de las sesiones?",
+      answer: "Sí, el seguimiento continuo es parte fundamental de nuestro método en Forward. Te proporcionamos pautas y ejercicios para realizar cuando no estás en el centro, porque entendemos que lo más importante es lo que haces en tu día a día. Monitorizamos tu progreso constantemente y ajustamos el plan según tu evolución para garantizar que alcances tus objetivos."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Tratan lesiones deportivas en Forward?",
+      answer: "Sí, contamos con fisioterapia deportiva especializada para recuperación y prevención de lesiones. Nuestro enfoque combina técnicas de fisioterapia profesional con entrenamiento enfocado en movilidad y funcionalidad, lo que acelera la recuperación y te ayuda a volver a tu actividad deportiva de forma segura."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿El entrenamiento es adecuado para personas con dolor crónico?",
+      answer: "Absolutamente. Muchos de nuestros pacientes llegan con dolor crónico y se encuentran mucho mejor desde que entrenan con nosotros. Diseñamos programas específicos enfocados en movilidad y recuperación, adaptados a tus limitaciones y progresando a tu ritmo. El movimiento controlado y supervisado es clave para gestionar y reducir el dolor crónico."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué opinan los pacientes de Forward Personal Training & Health Solutions?",
+      answer: "Tenemos una valoración de 4.8 estrellas en Google basada en 19 reseñas. Nuestros pacientes destacan especialmente el enfoque integral en movilidad y recuperación, el seguimiento personalizado para conseguir objetivos, y la profesionalidad de nuestro equipo de fisioterapia. Muchos mencionan que se encuentran mucho mejor desde que entrenan con nosotros y valoran que no somos solo una sala de entrenamiento."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Forward Personal Training & Health Solutions",
+    defaultTitle: "Forward Personal Training & Health Solutions | Las Palmas",
+    defaultDescription: "Fisioterapia profesional y entrenamiento personalizado en Las Palmas, Álava. Enfoque en movilidad y recuperación con seguimiento continuo. Valoración 4.8★. Pide cita: 646 85 68 19",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Las Palmas",
+      "entrenamiento personalizado Las Palmas",
+      "Forward Personal Training Las Palmas",
+      "fisioterapeuta Las Palmas Álava",
+      "rehabilitación Las Palmas",
+      "movilidad y recuperación Las Palmas",
+      "fisioterapia deportiva Las Palmas",
+      "tratamiento dolor crónico Las Palmas",
+      "entrenamiento funcional Álava",
+      "fisioterapia profesional Álava",
+      "centro salud bienestar Las Palmas",
+      "recuperación lesiones Las Palmas"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Forward Personal Training & Health Solutions",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Av. Alcalde José Ramirez Bethencourt, 22, 35004 Las Palmas de Gran Canaria, Las Palmas, España, Las Palmas, Álava"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Las Palmas"
+  ],
+  heroDescription: "En Forward Personal Training & Health Solutions integramos fisioterapia profesional con entrenamiento personalizado enfocado en movilidad y recuperación. Nuestro equipo te acompaña con seguimiento continuo para que alcances tus objetivos, tanto dentro como fuera de nuestras instalaciones.",
+  specialty: "Fisioterapia y Entrenamiento Personalizado",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperarte y alcanzar tus objetivos?",
+  ctaDescription: "Solicita tu cita de valoración y descubre cómo nuestro enfoque integral de fisioterapia y entrenamiento personalizado puede ayudarte. Te acompañamos en cada paso de tu recuperación.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
